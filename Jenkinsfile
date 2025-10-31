@@ -20,7 +20,7 @@ node {
     }
 
     stage('deploy') {
-      def resourceGroup = 'JENKINS-WESTUS3-RG'
+      def resourceGroup = 'jenkins-get-started-rg'
       def webAppName = 'yuzhang2025app'
 
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', 
